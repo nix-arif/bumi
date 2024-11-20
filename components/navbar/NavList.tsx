@@ -17,7 +17,7 @@ const NavList = ({ main, submain, path, path2 }: Props) => {
       href=""
       onMouseEnter={() => setFocus(true)}
       onMouseLeave={() => setFocus(false)}
-      className="py-3 flex items-center space-x-3 cursor-pointer"
+      className={`py-3 flex items-center space-x-3 cursor-pointer`}
     >
       <svg
         aria-hidden="true"

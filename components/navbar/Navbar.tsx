@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import ProductNav from "./ProductNav";
+import SolutionNav from "./SolutionNav";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -73,10 +74,11 @@ const Navbar = () => {
                 : "max-lg:max-h-0 max-lg:scale-y-50 max-lg:translate-y-1/4"
             }`}
           >
-            <div className="flex max-lg:flex-col lg:items-center max-sm:w-10/12 max-sm:mx-auto sm:ml-auto max-lg:w-[320px] lg:w-full max-lg:max-h-[500px] overflow-y-auto lg:mb-0 max-lg:bg-white max-lg:rounded-lg">
+            <div className="flex max-lg:flex-col lg:items-center max-sm:w-10/12 max-sm:mx-auto sm:ml-auto max-lg:w-[320px] lg:w-full max-lg:max-h-[500px] overflow-y-auto lg:mb-0 max-lg:bg-white max-lg:rounded-lg shadow-2xl">
               <nav className="mt-0 px-3 lg:px-6 text-[15.5px] mb-0 max-lg:py-10 max-lg:px-5">
                 <ul className="flex lg:items-center lg:space-x-2 max-lg:flex-col max-lg:text-neutral-700 max-lg:text-xl max-lg:font-medium max-lg:space-y-6 max-lg:h-auto overflow-y-auto">
                   <ProductNav />
+                  <SolutionNav />
                 </ul>
               </nav>
             </div>
